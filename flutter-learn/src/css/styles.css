@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--md-sys-color-background);
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, figcaption {
+    font-family: 'Manrope', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--md-sys-color-on-background);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* --- Header Style ---*/
+header {
+    width: 80%;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    z-index: 10;
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.bubble {
+    width: fit-content;
+    padding: 10px;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    background: linear-gradient(var(--md-sys-color-surface-variant), var(--md-sys-color-surface-variant)) padding-box,
+    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &.full-width{ width: auto; }
+
+    &.accept{
+        background: linear-gradient(var(--md-sys-color-primary), var(--md-sys-color-primary)) padding-box,
+        linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+        color: var(--md-sys-color-on-primary);
+        cursor: pointer;
+    }
+
+    &.decline{
+        background: linear-gradient(var(--md-sys-color-error), var(--md-sys-color-error)) padding-box,
+        linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+        color: var(--md-sys-color-on-error);
+        cursor: pointer;
+    }
+}
+
+.navigation {
+    width: fit-content;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    @media (max-width: 950px) {
+        margin-top: 125px;
+    }
+}
+
+.theme_switcher {
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.user_avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    border: var(--md-sys-color-primary) 2px solid;
+}
+
+
+/* --- Main Content Style ---*/
+main {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 75px 20px 0 20px;
+
+    @media (max-width: 950px) {
+        padding-top: 150px;
+        width: 95%;
+    }
+}
+
+.container {
+    width: auto;
+    padding: 10px;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    background: linear-gradient(var(--md-sys-color-tertiary-container), var(--md-sys-color-tertiary-container)) padding-box,
+    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    h1, h2, h3, h4, h5, h6 { color: var(--md-sys-color-tertiary); }
+    p, a{ color: var(--md-sys-color-on-tertiary-container); }
+
+    &.challenge{
+        background: linear-gradient(var(--md-sys-color-error-container), var(--md-sys-color-error-container)) padding-box,
+        linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        h1, h2, h3, h4, h5, h6 { color: var(--md-sys-color-error); }
+        p, a{ color: var(--md-sys-color-on-error-container); }
+    }
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- Content Card Style --- */
+.card_view{
+    border-radius: 25px 0 25px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content:space-evenly;
+    transition: background-color 0.6s;
+    padding: 0;
+    height: 500px;
+    margin: 10px 5% ;
+    list-style-type: none;
+}
+
+.app_card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    min-width: 300px;
+    width: 300px;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    background: linear-gradient(var(--md-sys-color-surface-variant), var(--md-sys-color-surface-variant)) padding-box,
+    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: auto 5px;
+}
+
+.card_image_container{
+    height: 50%;
+    width: 100%;
+    background-color: var(--md-sys-color-primary);
+    overflow: hidden;
+}
+
+.card_content{
+    height: 50%;
+    width: 100%;
+    background-color: var(--md-sys-color-primary-container);
+    overflow: hidden;
+    box-shadow: 0 -10px 8px 0 hsl(0deg 0% 0% / 0.3);
+    text-align: center;
+}
+
+.phone_outline{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+    top: 25px;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 35px 35px 0 0;
+    overflow: hidden;
+}
+
+.app_logo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: -100px;
+    top: 0;
+    z-index: 3;
+}
+
+.contentImgBox{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentImg{
+    width: 80%;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    background: linear-gradient(var(--md-sys-color-surface-variant), var(--md-sys-color-surface-variant)) padding-box,
+    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Inline text --- */
+.inline-paragraph { display: inline-block; }
+
+/* --- Footer Style --- */
+.footer {
+    width: 100%;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+
+.footer_logo{
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--md-sys-color-background)), url("https://www.uniqstudio.org/images/logo_uniq.webp");
+    background-size: cover;
+}
+
+.header_rotated_logo{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-left: -40px;
+}
+
+.footer_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--md-sys-color-primary);
+}
+
+.link_area {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer_link{
+    text-decoration: none;
+    display: block;
+    align-self: end;
+    margin-bottom: 12px;
+
+    &:hover,
+    &:focus-visible {
+        color: var(--md-sys-color-secondary);
+    }
+}
+
+/* --- Cookies Panel --- */
+#cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 340px;
+    padding: 15px;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    background: linear-gradient(var(--md-sys-color-surface-variant), var(--md-sys-color-surface-variant)) padding-box,
+    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* --- Padding Utilities --- */
+.p-0 { padding: 0; }
+.p-sm { padding: 10px; }
+.p-md { padding: 12px; }
+.p-lg { padding: 14px; }
+
+/* --- Padding Horizontal Utilities --- */
+.p-hor-0 { padding: 0 0; }
+.p-hor-sm { padding: 0 10px; }
+.p-hor-md { padding: 0 12px; }
+.p-hor-lg { padding: 0 14px; }
+
+/* --- Padding Vertical Utilities --- */
+.p-vet-0 { padding: 0 0; }
+.p-vet-sm { padding: 10px 0; }
+.p-vet-md { padding: 12px 0; }
+.p-vet-lg { padding: 14px 0; }
+
+/* --- Margin Utilities --- */
+.m-0 { margin: 0; }
+.m-sm { margin: 10px; }
+.m-md { margin: 12px; }
+.m-lg { margin: 14px; }
