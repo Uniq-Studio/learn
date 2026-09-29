@@ -9,59 +9,61 @@ export default function CourseMainPage(
 ) {
     return(
         <div>
-            <ProjectTitle subject="COMP10020 – INTERNET TECHNOLOGIES" title="Flutter" academic="Bennett, Paul; Hamilton, Aaron; Mian, Asim; Rafique, Iram" week="6"/>
+            <ProjectTitle subject="COMP10020 – INTERNET TECHNOLOGIES" title="Flutter Basics" academic="Aaron Hamilton, Asim Mian, Iram Rafique, Paul Bennett" week="6"/>
 
-            <TitleText title="Aim:" body="SAY WHAT THE AIM OF THIS LAB SESSION IS"/>
+            <TitleText title="Aim:" body="The primary objective of this lab session is to learn the fundimentals and understanding of Flutter.
+             We will focus on the basics of Flutter, including its UI hierarchy, layout, and widgets. You will learn how to create a layout
+              using Flutter's UI Hierarchy."/>
 
             <TitleList title="Key Objectives:" list={[
                 {
-                    heading: "1",
-                    description: "1.1"
+                    heading: "Environment Setup",
+                    description: "Successfully set up, configure, and troubleshoot the Flutter development environment to build and run apps across target platforms."
                 },
                 {
-                    heading: "2",
-                    description: "2.1"
+                    heading: "Core Fundamentals and Widgets",
+                    description: "Master Flutter's \"everything is a widget\" tree structure, using foundational UI and layout widgets to compose structured, responsive screens."
                 },
                 {
-                    heading: "3",
-                    description: "3.1"
+                    heading: "Practical Component Assembly",
+                    description: "Apply layout principles, styling properties, and visual hierarchies to build clean, real-world user interface components from scratch."
                 }
             ]} />
 
-            <TitleText title="Additional Notes:" body="SAY SOMETHING ABOUT ADDITIONAL NOTES."/>
+            <TitleText title="Additional Notes:" body="Most of the practical sections include a brief theoretical overview of the topic, complemented by guided exercises. To engage with these exercises, you can copy and paste them into your code editor and observe the outcomes. Additionally, at the end of certain sections, you'll find a code challenge related to that specific topic. Complete these challenges and feel free to approach the Academics with any questions you may have."/>
 
             <ContentCard content={[
                 {
-                    src: "./src/img/logo/github_logo.webp",
-                    alt: "GitHub Logo",
+                    src: "./src/img/logo/code_logo.webp",
+                    alt: "Visual Studio Logo",
                     title: "Install & Set Up",
-                    label: "Downloading Flutter in VS Code.",
+                    label: "Downloading Flutter in Visual Studio Code.",
                     onClick: onClickL1,
                 },
                 {
-                    src: "./src/img/logo/codesandbox_logo.webp",
-                    alt: "CodeSandbox Logo",
+                    src: "./src/img/logo/flutter_logo.webp",
+                    alt: "Flutter Logo",
                     title: "Hello World",
                     label: "Hello, World! It's my first Flutter app.",
                     onClick: onClickL2,
                 },
                 {
-                    src: "./src/img/logo/codesandbox_logo.webp",
-                    alt: "CodeSandbox Logo",
+                    src: "./src/img/logo/flutter_logo.webp",
+                    alt: "Flutter Logo",
                     title: "UI Hierarchy",
                     label: "Understand Flutter's UI Hierarchy.",
                     onClick: onClickL3,
                 },
                 {
-                    src: "./src/img/logo/javascript_logo.webp",
-                    alt: "JavaScript Logo",
+                    src: "./src/img/logo/flutter_logo.webp",
+                    alt: "Flutter Logo",
                     title: "Layout Basic",
                     label: "Create a layout using Flutter's UI Hierarchy.",
                     onClick: onClickL4,
                 },
                 {
-                    src: "./src/img/logo/javascript_logo.webp",
-                    alt: "JavaScript Logo",
+                    src: "./src/img/logo/flutter_logo.webp",
+                    alt: "Flutter Logo",
                     title: "Challenge",
                     label: "Challenge - List of Basic Recipes.",
                     onClick: onClickL5,
