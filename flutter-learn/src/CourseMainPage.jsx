@@ -18,11 +18,11 @@ export default function CourseMainPage(
             <TitleList title="Key Objectives:" list={[
                 {
                     heading: "Environment Setup",
-                    description: "Successfully set up, configure, and troubleshoot the Flutter development environment to build and run apps across target platforms."
+                    description: "Successfully set up Visual Studio Code and Installing Flutter along side. Configuring Flutter to create web apps and learn the Flutter development environment to build and run apps across target platforms."
                 },
                 {
                     heading: "Core Fundamentals and Widgets",
-                    description: "Master Flutter's \"everything is a widget\" tree structure, using foundational UI and layout widgets to compose structured, responsive screens."
+                    description: "Understand Flutter's \"Everything is a Widget\" and break down user interfaces down to help create dynamic and using the UI Hierarchy to create responsive applications."
                 },
                 {
                     heading: "Practical Component Assembly",

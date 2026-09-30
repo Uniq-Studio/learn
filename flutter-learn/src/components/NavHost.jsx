@@ -2,9 +2,10 @@ import {useState} from "react";
 import L1GitHub from "../L1GitHub.jsx";
 import CourseMainPage from "../CourseMainPage.jsx";
 import L5FunArr from "../L5FunArr.jsx";
+import L1Install from "../L1Install.jsx";
 
 export default function NavHost() {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(1);
     const displayPage = () => {
         switch (page) {
             case 0:
@@ -19,7 +20,7 @@ export default function NavHost() {
                     onClickL8={() => setPage(8)}
                 />;
             case 1:
-                return <L1GitHub onClickBack={() => setPage(0)} />
+                return <L1Install onClickBack={() => setPage(0)} />
             case 2:
                 return <L1GitHub onClickBack={() => setPage(0)} />
             case 3:
