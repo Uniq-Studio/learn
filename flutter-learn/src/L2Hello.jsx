@@ -86,11 +86,26 @@ export default function L1Install(
                 alt="Chrome broser displaying hello world in the top left corner of the screen."
                 caption="Flutter project displaying Hello World in the top left corner of the screen." />
 
+            <SubtitleTextList
+                title="Centering Everything"
+                body={[
+                    {text: "Now let us pull it from the the top right to the center"},
+                ]}
+                content={
+                    <CodeCard code={
+                        "home: Scaffold(\n" +
+                        "        body: Center(\n" +
+                        "          child: Text(\"Hello, World!\")\n" +
+                        "          )\n" +
+                        "      )"
+                    }/>
+                }
+            />
 
             <ChallengeCard body={[
-                {text:"Research more styling text and images by reviewing flutter documentation"},
-                {text: "Update the image to be a fixed size so any resolution of photo can be used"},
-                {text: "Update the text to be large and bold to use as a title for the card."},
+                {text:"Research Text Styles in Flutter."},
+                {text: "Within the Text widget add the parameter style:"},
+                {text: "Update the text to be large and bold to use as a title."},
             ]} />
 
             <CompletedCard />
