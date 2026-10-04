@@ -15,35 +15,28 @@ export default function L1Install(
         <article>
             <ContentTitle
                 subject="COMP10020 – INTERNET TECHNOLOGIES"
-                title="Hello World"
-                subtitle="Understanding and modifying starter code."
+                title="Challenge"
+                subtitle="Testing your knowlage and refineing your skills."
                 onClickBack={onClickBack} />
 
             <TitleText
-                title="Aim:"
-                body="The primary objective of this content is to read, understand and play with the starter code and view how Flutter is structured. The use of Chrome will help us test the code in real time with the use of Hot Restart and using it to view and amend any changes we wish to change to the current code to get formilar with the syntax of dart." />
+                title="Challenge Brief & Design Breakdown"
+                body="The goal is to build up a responsive, styled recipe card componet centered in the browser window. Take insperation from the following images." />
 
-            <TitleList title="Key Objectives:" list={[
-                {
-                    heading: "Debug",
-                    description: "Run the current Flutter project and configuring it to target the Chrome Web Browser"
-                },
-                {
-                    heading: "Hot Restart",
-                    description: "Modifying the code and using Hot Restart to see what was changed and watch it update live"
-                },
-                {
-                    heading: "Roles",
-                    description: "Understanding the structure and the roles that we call like Main() runApp() within main.dart"
-                }
-            ]} />
+            <ImageCard
+                src={"src/img/course/l5/card1.png"}
+                alt="App Bar that is themed with the Material color scheme."
+                caption="App Bar that is themed with the Material color scheme" />
 
-
+            <ImageCard
+                src={"src/img/course/l5/card2.png"}
+                alt="App Bar that is themed with the Material color scheme."
+                caption="App Bar that is themed with the Material color scheme" />
 
             <ChallengeCard body={[
-                {text:"Research Text Styles in Flutter."},
-                {text: "Within the Text widget add the parameter style:"},
-                {text: "Update the text to be large and bold to use as a title."},
+                {text: "Now its your turn, using all of the skills you have learnt its time to make your own card."},
+                {text: "Try to make, in your own style, 3 cards of different recipes, coffees or even locations to visit"},
+                {text: "Good Luck and happy coding."},
             ]} />
 
             <CompletedCard />

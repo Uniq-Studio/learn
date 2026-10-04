@@ -3,118 +3,127 @@ import TitleText from "./components/TitleText.jsx";
 import SubtitleTextList from "./components/SubtitleTextList.jsx";
 import ImageCard from "./components/ImageCard.jsx";
 import CompletedCard from "./components/CompletedCard.jsx";
-import LearningResources from "./components/LearningResources.jsx"
+import LearningResources from "./components/LearningResources.jsx";
 import TitleList from "./components/TitleList.jsx";
 
-export default function L1Install(
-    {onClickBack}
-) {
-    return(
-        <article>
+export default function L1Install({ onClickBack }) {
+    return (
+        <article className="lesson-container">
             <ContentTitle
                 subject="COMP10020 – INTERNET TECHNOLOGIES"
                 title="Installing Flutter into Visual Studio Code"
-                urgent="You do not require a fresh instillation and should work with your current set up. You are not limited to VSCode and free to
-                 use other compatable IDE."
-                onClickBack={onClickBack} />
+                urgent="You do not require a fresh installation if you already have a working setup. You are also free to use any other compatible IDE (e.g., Android Studio or IntelliJ)."
+                onClickBack={onClickBack}
+            />
 
             <TitleText
                 title="Aim:"
-                body="The primary objective of this content is to establish an instance of Visual Studio Code running with the latest version of
-                Flutter. Subsequently, we will configure Flutter for the utilization of this content on create application hosted within the browser." />
+                body="The primary objective of this lesson is to set up Visual Studio Code with the Flutter SDK. By the end of this session, you will configure Flutter to build and run web applications directly inside your browser."
+            />
 
-            <TitleList title="Key Objectives:" list={[
-                {
-                    heading: "Visual Studio Code installation",
-                    description: "Ensuring that you have a basic installation of Visual Studio Code on the device you are currently developing on."
-                },
-                {
-                    heading: "Installing Flutter and Configuring",
-                    description: "Installing the Flutter extension to Visual Studio Code running with the latest version and configuring VS Code to have the correct Command Palette."
-                }
-            ]} />
+            <TitleList
+                title="Key Objectives:"
+                list={[
+                    {
+                        heading: "Configure IDE & Environment",
+                        description: "Ensure Visual Studio Code and necessary system prerequisites are installed and properly configured."
+                    },
+                    {
+                        heading: "Install & Connect Flutter SDK",
+                        description: "Install the official Flutter extension for VS Code and download/link the Flutter SDK to your environment."
+                    },
+                    {
+                        heading: "Verify Web Target & Create Project",
+                        description: "Initialize a new Flutter Web application using the VS Code Command Palette and target Chrome for browser development."
+                    },
+                ]}
+            />
 
             <SubtitleTextList
-                title="Step One – Install Prerequisite (Windows):"
+                title="Step One – Install Prerequisites (Windows):"
                 body={[
-                    {text: "To ensure the proper functioning of Flutter, we must install certain prerequisite software. As a developer, it is imperative that you have this software packages installed on your system."},
-                    {text: "This guide is specifically tailored for WINDOWS USERS."},
-                    {text: "The necessary software for installation includes Git for Windows and Visual Studio Code. Administrative access is required for the installation of these programs."}
+                    { text: "To ensure proper functioning, Flutter requires Git and VS Code. Administrative access is required to install these applications on your system." },
+                    { text: "Follow these steps if you are using WINDOWS:" },
                 ]}
                 list={[
-                    {task: "Proceed to the following link: https://git-scm.com/install/windows"},
-                    {task: "Select “Click here to download” and download the latest version of Git to your system."},
-                    {task: "Follow the on-screen instructions provided by the Git installation wizard."},
-                    {task: "Once the installation is complete, proceed to the following link: https://code.visualstudio.com"},
-                    {task: "Select “Download for Windows” and follow the on-screen instructions provided by the Visual Studio Code installation wizard."},
+                    { task: "Go to the official Git for Windows installer: https://git-scm.com/install/windows" },
+                    { task: "Click 'Click here to download' to get the latest version of Git." },
+                    { task: "Run the downloaded installer and follow the standard installation wizard." },
+                    { task: "Go to the Visual Studio Code download page: https://code.visualstudio.com" },
+                    { task: "Select 'Download for Windows' and complete the installation wizard." },
                 ]}
             />
 
             <SubtitleTextList
-                title="Step One – Install Prerequisite (macOS):"
+                title="Step One – Install Prerequisites (macOS):"
                 body={[
-                    {text: "To ensure the proper functioning of Flutter, we must install certain prerequisite software. As a developer, it is imperative that you have this software packages installed on your system."},
-                    {text: "This guide is specifically tailored for MACOS USERS."},
-                    {text: "The necessary software for installation includes Xcode command-line tools and Visual Studio Code. Administrative access is required for the installation of these programs."}
+                    { text: "To ensure proper functioning, Flutter requires Xcode command-line tools and VS Code." },
+                    { text: "Follow these steps if you are using MACOS:" },
                 ]}
                 list={[
-                    {task: "Launch the Terminal application."},
-                    {task: "Enter the following command: xcode-select –install"},
-                    {task: "Provide your password and accept the terms and conditions."},
-                    {task: "Once the installation is complete, proceed to the following link: https://code.visualstudio.com"},
-                    {task: "Select “Download for macOS” and drag and drop Visual Studio Code into your application folder."},
+                    { task: "Launch the Terminal application." },
+                    { task: "Enter the command: xcode-select --install" },
+                    { task: "Enter your administrator password when prompted and accept the license terms." },
+                    { task: "Go to the Visual Studio Code download page: https://code.visualstudio.com" },
+                    { task: "Select 'Download for macOS', open the downloaded zip file, and move Visual Studio Code into your Applications folder." },
                 ]}
             />
 
             <SubtitleTextList
-                title="Step Two – Install Flutter:"
+                title="Step Two – Install Flutter Extension in VS Code:"
                 body={[
-                    {text: "Launch Visual Studio Code, and follow the first time set up if needed."},
-                    {text: "On the left hand side bar, click on the 2x2 squares, extensions. then within the MarketPlace, search Flutter and then click the install button."},
+                    { text: "Launch Visual Studio Code and complete the first-time setup if prompted." },
+                    { text: "Open Extensions by clicking the square icon on the left sidebar (or press Ctrl+Shift+X / Cmd+Shift+X)." },
+                    { text: "Search for 'Flutter' in the Marketplace search bar and click 'Install'." },
                 ]}
             />
 
             <ImageCard
-                src={"src/img/course/l1/visual-studio-code-flutter-install.png"}
-                alt="Visual studio code marketplace screen with flutter serached and installed"
-                caption="VSCode Marketplace screen with Flutter searched" />
+                src="src/img/course/l1/visual-studio-code-flutter-install.png"
+                alt="Visual Studio Code Marketplace search results showing the official Flutter extension."
+                caption="VS Code Marketplace screen showing the Flutter extension search"
+            />
 
             <SubtitleTextList
-                title="Step Three – Create Flutter Project:"
+                title="Step Three – Create a New Flutter Web Project:"
                 body={[
-                    {text: "On the left hand side bar, click on the pages, Explorer. Create a folder and load it."},
-                    {text: "At the menu bar, click on View > Command Palette..."},
-                    {text: "The search bar will be selected and search flutter and select 'Flutter: Create New Project'"},
-                    {text: "Select EmptyApplication and save it in your current folder. Then name it my_app. Then only have 'Web' checked and select 'Okay'"},
+                    { text: "Open the Explorer view on the left sidebar, click 'Open Folder', and create a dedicated folder for your Flutter projects." },
+                    { text: "Open the Command Palette from the top menu: View > Command Palette... (or press Ctrl+Shift+P / Cmd+Shift+P)." },
+                    { text: "Type 'Flutter' into the Command Palette and select 'Flutter: New Project'." },
+                    { text: "Select 'Application' (or 'Empty Application'), choose your newly created folder, and name your project 'my_app'." },
+                    { text: "When prompted to select target platforms, ensure 'Web' is checked and click 'OK'." },
                 ]}
             />
 
             <ImageCard
-                src={"src/img/course/l1/command-palette.png"}
-                alt="MacOS Menu bar showing VS Codes selection with view selected, displaying Command Palette."
-                caption="macOS Menu bar showing VSCode's selection with view selected" />
+                src="src/img/course/l1/command-palette.png"
+                alt="VS Code menu bar showing View selected with Command Palette highlighted."
+                caption="Opening the Command Palette in VS Code"
+            />
 
             <ImageCard
-                src={"src/img/course/l1/new-project.png"}
-                alt="Searching 'Flutter' and selecting 'Flutter: Create New Project'"
-                caption="Searching 'Flutter' and selecting 'Flutter: Create New Project'" />
+                src="src/img/course/l1/new-project.png"
+                alt="Selecting 'Flutter: New Project' from the Command Palette search results."
+                caption="Creating a new Flutter project via the Command Palette"
+            />
 
             <SubtitleTextList
-                title="Step Three – Install Flutter SDK:"
+                title="Step Four – Install & Link the Flutter SDK:"
                 body={[
-                    {text: "An error message will pop up asking to install the SDK."},
-                    {text: "Click 'Download SDK' and select the root of your drive (Or wherever you would like to install it) then allow it to be added to your PATH."},
-                    {text: "Once downloaded, your project will start to create."},
-                    {text: "You are ready to develop your first Flutter app!"},
+                    { text: "If VS Code does not detect a Flutter SDK on your system, a popup notification will appear asking you to locate or download it." },
+                    { text: "Click 'Download SDK', choose a location on your drive (e.g., C:\\flutter or ~/development/flutter), and allow VS Code to configure your system PATH." },
+                    { text: "Once the download completes, VS Code will finish generating your project files."},
+                    { text: "You are now ready to write and execute your first Flutter Web app!"},
                 ]}
             />
 
             <ImageCard
-                src={"src/img/course/l1/download-sdk.png"}
-                alt="VS Code asking to download the flutter SDK"
-                caption="VSCode requesting the user to install the Flutter SDK" />
+                src="src/img/course/l1/download-sdk.png"
+                alt="VS Code prompt requesting to download or locate the Flutter SDK."
+                caption="VS Code requesting to download the Flutter SDK"
+            />
 
             <CompletedCard />
         </article>
-    )
+    );
 }
