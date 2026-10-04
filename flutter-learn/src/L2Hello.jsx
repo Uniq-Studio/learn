@@ -13,7 +13,7 @@ export default function L2HelloWorld({ onClickBack }) {
         <article className="lesson-container">
             <ContentTitle
                 subject="COMP10020 – INTERNET TECHNOLOGIES"
-                title="Lesson 2: Hello World"
+                title="Hello World"
                 subtitle="Understanding project structure and modifying starter code."
                 onClickBack={onClickBack}
             />
