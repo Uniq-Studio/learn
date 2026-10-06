@@ -12,13 +12,13 @@ function setTheme(){
     if(darkThemeEnabled === 2){
         document.body.classList.add("dark");
         document.body.classList.remove("light");
-        document.getElementById("theme_icon").src = "src/img/ui/dark_mode.webp";
+        document.getElementById("theme_icon").src = "public/img/ui/dark_mode.webp";
         document.getElementById("theme_icon").alt = "Dark Mode";
         document.getElementById("theme_icon").title = "Dark Mode";
     } else if (darkThemeEnabled === 1) {
         document.body.classList.add("light");
         document.body.classList.remove("dark");
-        document.getElementById("theme_icon").src = "src/img/ui/light_mode.webp";
+        document.getElementById("theme_icon").src = "public/img/ui/light_mode.webp";
         document.getElementById("theme_icon").alt = "Light Mode";
         document.getElementById("theme_icon").title = "Light Mode";
     }
@@ -26,13 +26,13 @@ function setTheme(){
         if(window.matchMedia("(prefers-color-scheme: dark)").matches){
             document.body.classList.add("dark");
             document.body.classList.remove("light");
-            document.getElementById("theme_icon").src = "src/img/ui/auto_mode.webp";
+            document.getElementById("theme_icon").src = "public/img/ui/auto_mode.webp";
             document.getElementById("theme_icon").alt = "System Default Theme";
             document.getElementById("theme_icon").title = "System Default";
         } else{
             document.body.classList.add("light");
             document.body.classList.remove("dark");
-            document.getElementById("theme_icon").src = "src/img/ui/auto_mode.webp";
+            document.getElementById("theme_icon").src = "public/img/ui/auto_mode.webp";
             document.getElementById("theme_icon").alt = "System Default Theme";
             document.getElementById("theme_icon").title = "System Default";
         }
