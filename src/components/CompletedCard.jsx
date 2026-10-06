@@ -7,7 +7,7 @@ export default function CompletedCard(){
                 <div className="card_image_container">
                     <img src="https://www.uniqstudio.org/images/ui/home/pixel_10_pro_outline.webp" alt="Phone Outline"
                          className="phone_outline"/>
-                    <img src="../../public/img/ui/checkmark.webp" alt="Check Mark" className="app_logo"/>
+                    <img src="img/ui/checkmark.webp" alt="Check Mark" className="app_logo"/>
                 </div>
                 <div className="card_content">
                     <h3 className="text-headline-md font-normal p-sm">Completed</h3>

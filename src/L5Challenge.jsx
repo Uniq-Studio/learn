@@ -29,13 +29,13 @@ export default function L5Challenge({ onClickBack }) {
             />
 
             <ImageCard
-                src="src/img/course/l5/card1.png"
+                src="img/course/l5/card1.png"
                 alt="Example design of a recipe card showing a header banner, title, description, and metadata row."
                 caption="Example Recipe Card layout with metadata row"
             />
 
             <ImageCard
-                src="src/img/course/l5/card2.png"
+                src="img/course/l5/card2.png"
                 alt="Alternative card design variant showing different color schemes and icon layouts."
                 caption="Alternative styled card design variant"
             />

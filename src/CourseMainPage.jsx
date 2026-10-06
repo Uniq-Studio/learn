@@ -34,35 +34,35 @@ export default function CourseMainPage(
 
             <ContentCard content={[
                 {
-                    src: "./src/img/logo/code_logo.webp",
+                    src: "img/logo/code_logo.webp",
                     alt: "Visual Studio Logo",
                     title: "Install & Set Up",
                     label: "Downloading Flutter in Visual Studio Code.",
                     onClick: onClickL1,
                 },
                 {
-                    src: "./src/img/logo/flutter_logo.webp",
+                    src: "img/logo/flutter_logo.webp",
                     alt: "Flutter Logo",
                     title: "Hello World",
                     label: "Hello, World! It's my first Flutter app.",
                     onClick: onClickL2,
                 },
                 {
-                    src: "./src/img/logo/flutter_logo.webp",
+                    src: "img/logo/flutter_logo.webp",
                     alt: "Flutter Logo",
                     title: "UI Hierarchy",
                     label: "Understand Flutter's UI Hierarchy.",
                     onClick: onClickL3,
                 },
                 {
-                    src: "./src/img/logo/flutter_logo.webp",
+                    src: "img/logo/flutter_logo.webp",
                     alt: "Flutter Logo",
                     title: "Layout Basic",
                     label: "Create a layout using Flutter's UI Hierarchy.",
                     onClick: onClickL4,
                 },
                 {
-                    src: "./src/img/logo/flutter_logo.webp",
+                    src: "img/logo/flutter_logo.webp",
                     alt: "Flutter Logo",
                     title: "Challenge",
                     label: "Challenge - List of Basic Recipes.",

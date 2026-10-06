@@ -79,7 +79,7 @@ export default function L1Install({ onClickBack }) {
             />
 
             <ImageCard
-                src="src/img/course/l1/visual-studio-code-flutter-install.png"
+                src="img/course/l1/visual-studio-code-flutter-install.png"
                 alt="Visual Studio Code Marketplace search results showing the official Flutter extension."
                 caption="VS Code Marketplace screen showing the Flutter extension search"
             />
@@ -96,13 +96,13 @@ export default function L1Install({ onClickBack }) {
             />
 
             <ImageCard
-                src="src/img/course/l1/command-palette.png"
+                src="img/course/l1/command-palette.png"
                 alt="VS Code menu bar showing View selected with Command Palette highlighted."
                 caption="Opening the Command Palette in VS Code"
             />
 
             <ImageCard
-                src="src/img/course/l1/new-project.png"
+                src="img/course/l1/new-project.png"
                 alt="Selecting 'Flutter: New Project' from the Command Palette search results."
                 caption="Creating a new Flutter project via the Command Palette"
             />
@@ -118,7 +118,7 @@ export default function L1Install({ onClickBack }) {
             />
 
             <ImageCard
-                src="src/img/course/l1/download-sdk.png"
+                src="img/course/l1/download-sdk.png"
                 alt="VS Code prompt requesting to download or locate the Flutter SDK."
                 caption="VS Code requesting to download the Flutter SDK"
             />

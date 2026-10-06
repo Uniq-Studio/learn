@@ -98,7 +98,7 @@ void main() {
             />
 
             <ImageCard
-                src="src/img/course/l2/unanchored-hello-world.png"
+                src="img/course/l2/unanchored-hello-world.png"
                 alt="Chrome browser displaying unanchored text in the top left corner."
                 caption="Text rendered in the top-left corner before adding layout alignment"
             />

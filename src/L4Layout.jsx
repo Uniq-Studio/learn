@@ -58,7 +58,7 @@ export default function L1Install(
                 ]}
                 content={
                     <ImageCard
-                        src="src/img/course/l4/costa-coffee-app-bar.jpg"
+                        src="img/course/l4/costa-coffee-app-bar.jpg"
                         alt="Costa Coffee App Bar"
                         caption="Costa Coffee App Bar, Greeting Aaron and diplaying that he has 1 free coffee."
                     />
@@ -74,7 +74,7 @@ export default function L1Install(
                 ]}
                 content={
                     <ImageCard
-                        src="src/img/course/l4/costa-coffee-body.jpg"
+                        src="img/course/l4/costa-coffee-body.jpg"
                         alt="Costa Coffee App Bar"
                         caption="Costa Coffee home screen displaying the latest news and rewards."
                     />
@@ -90,7 +90,7 @@ export default function L1Install(
                 ]}
                 content={
                     <ImageCard
-                        src="src/img/course/l4/costa-coffee-nav-bar.jpg"
+                        src="img/course/l4/costa-coffee-nav-bar.jpg"
                         alt="Costa Coffee App Bar"
                         caption="Costa Coffee home screen displaying the latest news and rewards."
                     />
@@ -346,7 +346,7 @@ class _MetaDataRow extends StatelessWidget {
                 {text: "Display an image at the top of the card showing the coffee you have selected!."},
             ]} />
             <ImageCard
-                src="src/img/course/l4/add-image.png"
+                src="img/course/l4/add-image.png"
                 alt="Finalized coffee card"
                 caption="Image of a Mocha Latte added to the card and modified the shape."
             />

@@ -120,7 +120,7 @@ class MyApp extends StatelessWidget {
             />
 
             <ImageCard
-                src="src/img/course/l3/sized-card.png"
+                src="img/course/l3/sized-card.png"
                 alt="A filled card with fixed dimensions displaying Hello World centered inside."
                 caption="A filled Card constrained by a 250x300 SizedBox"
             />
@@ -143,7 +143,7 @@ class MyApp extends StatelessWidget {
             />
 
             <ImageCard
-                src="src/img/course/l3/app-bar.png"
+                src="img/course/l3/app-bar.png"
                 alt="Top AppBar rendered using primary theme colors."
                 caption="Top AppBar styled with Material 3 theme colors"
             />
@@ -238,7 +238,7 @@ class _MyCard extends StatelessWidget {
             />
 
             <ImageCard
-                src="src/img/course/l3/app-so-far.png"
+                src="img/course/l3/app-so-far.png"
                 alt="Final screen rendering a themed app bar and a custom card widget centered in the body."
                 caption="Complete UI rendered with custom _MyCard widget"
             />
