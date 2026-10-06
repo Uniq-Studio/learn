@@ -9,7 +9,7 @@ import L5Challenge from "../L5Challenge.jsx";
 
 
 export default function NavHost() {
-    const [page, setPage] = useState(4);
+    const [page, setPage] = useState(0);
     const displayPage = () => {
         switch (page) {
             case 0:
