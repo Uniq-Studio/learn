@@ -106,12 +106,8 @@ void main() {
             <SubtitleTextList
                 title="Centering the Text Widget:"
                 body={[
-                    {
-                        text: "Notice how the text sits in the top-left corner. In Flutter, alignment is controlled by wrapping content in layout widgets.",
-                    },
-                    {
-                        text: "Wrap your Text widget inside a Center widget to position it in the middle of the browser screen:",
-                    },
+                    { text: "Notice how the text sits in the top-left corner. In Flutter, alignment is controlled by wrapping content in layout widgets." },
+                    { text: "Wrap your Text widget inside a Center widget to position it in the middle of the browser screen:" },
                 ]}
                 content={
                     <CodeCard
