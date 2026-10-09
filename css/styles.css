@@ -47,6 +47,7 @@ header {
     background: linear-gradient(var(--md-sys-color-surface-variant), var(--md-sys-color-surface-variant)) padding-box,
     linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05)) border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
 
     &.full-width{ width: auto; }
 
