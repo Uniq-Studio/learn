@@ -1,6 +1,8 @@
 import ContentCard from "./ContentCard";
 
-export default function CompletedCard(){
+export default function CompletedCard(
+    {onClick}
+){
     return (
         <article className="horizontal">
             <div className="app_card">
@@ -12,6 +14,7 @@ export default function CompletedCard(){
                 <div className="card_content">
                     <h3 className="text-headline-md font-normal p-sm">Completed</h3>
                     <p className="text-label-lg p-md">Well Done! You completed this module.</p>
+                    {onClick && <a onClick={onClick} href="#!"><p className="bubble full-width m-lg">Next Lesson</p></a>}
                 </div>
             </div>
             <div>

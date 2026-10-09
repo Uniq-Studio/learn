@@ -8,7 +8,7 @@ import TitleList from "./components/TitleList.jsx";
 import CodeCard from "./components/CodeCard.jsx";
 import ChallengeCard from "./components/ChallengeCard.jsx";
 
-export default function L2HelloWorld({ onClickBack }) {
+export default function L2HelloWorld({ onClickBack, onClickNext }) {
     return (
         <article className="lesson-container">
             <ContentTitle
@@ -128,7 +128,7 @@ void main() {
                 ]}
             />
 
-            <CompletedCard />
+            <CompletedCard onClick={onClickNext}/>
         </article>
     );
 }

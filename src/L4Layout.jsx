@@ -8,9 +8,7 @@ import TitleList from "./components/TitleList.jsx";
 import CodeCard from "./components/CodeCard.jsx";
 import ChallengeCard from "./components/ChallengeCard.jsx";
 
-export default function L1Install(
-    {onClickBack}
-) {
+export default function L1Install({onClickBack, onClickNext}) {
     return(
         <article>
             <ContentTitle
@@ -351,7 +349,7 @@ class _MetaDataRow extends StatelessWidget {
                 caption="Image of a Mocha Latte added to the card and modified the shape."
             />
 
-            <CompletedCard />
+            <CompletedCard onClick={onClickNext}/>
         </article>
     )
 }

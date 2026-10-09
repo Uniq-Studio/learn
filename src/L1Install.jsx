@@ -6,7 +6,7 @@ import CompletedCard from "./components/CompletedCard.jsx";
 import LearningResources from "./components/LearningResources.jsx";
 import TitleList from "./components/TitleList.jsx";
 
-export default function L1Install({ onClickBack }) {
+export default function L1Install({ onClickBack, onClickNext }) {
     return (
         <article className="lesson-container">
             <ContentTitle
@@ -123,7 +123,7 @@ export default function L1Install({ onClickBack }) {
                 caption="VS Code requesting to download the Flutter SDK"
             />
 
-            <CompletedCard />
+            <CompletedCard onClick={onClickNext}/>
         </article>
     );
 }

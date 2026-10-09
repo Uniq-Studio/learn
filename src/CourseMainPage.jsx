@@ -3,13 +3,22 @@ import TitleText from "./components/TitleText.jsx";
 import TitleList from "./components/TitleList.jsx"
 import ContentCard from "./components/ContentCard.jsx"
 import LearningResources from "./components/LearningResources.jsx"
+import SubtitleTextList from "./components/SubtitleTextList.jsx";
 
 export default function CourseMainPage(
-    {onClickL1, onClickL2, onClickL3, onClickL4, onClickL5}
+    {onClickL1, onClickL2, onClickL3, onClickL4, onClickL5, onClickSlides}
 ) {
     return(
-        <div>
+        <article>
             <ProjectTitle subject="COMP10020 – INTERNET TECHNOLOGIES" title="Flutter Basics" academic="Aaron Hamilton, Asim Mian, Iram Rafique, Paul Bennett" week="6"/>
+
+            <SubtitleTextList
+                title="Lecture:"
+                body={[{text: "If you were not present in the lecture, before attempting this lab session, please review the lecture slides."}]}
+                content={
+                    <a onClick={onClickSlides} href="#!"><p className="bubble m-lg">View Lecture Slides</p></a>
+                }
+            />
 
             <TitleText title="Aim:" body="The primary objective of this lab session is to learn the fundimentals and understanding of Flutter.
              We will focus on the basics of Flutter, including its UI hierarchy, layout, and widgets. You will learn how to create a layout
@@ -112,6 +121,6 @@ export default function CourseMainPage(
                     link: "https://www.w3schools.com/jsref/jsref_find.asp"
                 },
             ]}/>
-        </div>
+        </article>
     )
 }
