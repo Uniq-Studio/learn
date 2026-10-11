@@ -8,7 +8,7 @@ import L5Challenge from "../L5Challenge.jsx";
 import LectureSlides from "../LectureSlides.jsx";
 
 export default function NavHost() {
-    const [page, setPage] = useState(6);
+    const [page, setPage] = useState(0);
     const displayPage = () => {
         switch (page) {
             case 0:
