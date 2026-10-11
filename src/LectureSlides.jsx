@@ -92,7 +92,14 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 5 - How Flutter Works"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "Let’s break down quickly on how Flutter works."},
+                    {text: "At the very top is your application code, this is where you combine UI widgets with your apps business logic and state management. That is where all of that lives."},
+                    {text: "Right underneath that is the Flutter framework. This part is where all of the widgets we had used live and all the other core components are. This also houses the Material and Cupertino themes, gesture detectors, text input and so much more. It takes all your widgets and creates them into the Widget Tree."},
+                    {text: "Then we enter the engine layer. This is where the Dart runtime is hosted, text layout management and handling system events. This area does the heavy lifting of the rendering of the application."},
+                    {text: "Below the engine sits the Embedder. The embedder is platform-specific—meaning Android, iOS, Windows, and macOS each have their own. It communicates directly with the host operating system to set up rendering surfaces, manage thread scheduling, pass touch inputs, and handle native accessibility events."},
+                    {text: "Finally, the runner. This is run when you type flutter create. This build up your project from a shell project and get the environment ready for creating your new program. Just like when you start a new project on Android Studio or Xcode."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide5.webp"
@@ -104,7 +111,12 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 6 - Flutter's Widgets"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "When building with Flutter, one thing to remember is that almost everything that you see and use in your application is a widgets. Widgets are the fundamental building block of any Flutter project you create."},
+                    {text: "The framework comes packed with a large library of pre-built widgets out of the box. You have all the basic widgets for rendering text and images as well as helping creating layouts. All the pre-build widgets are also very customizable so your apps can be unique."},
+                    {text: "Beyond just the built in widgets, there are massive community driven ecosystems alongside Googles first party packages. Every widgets are created to be highly customizable, flexible giving you a strong sense of freedom when creating the app."},
+                    {text: "As you can see on the screen, there are some of the moist common widgets you’ll work with daily with every project you create."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide6.webp"
@@ -116,7 +128,13 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 7 - Stateless & Stateful Widget"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "Now we have an understanding on widgets to build our UI, we will explain how they handle changes. IN Flutter there are to main states that your widgets can be; Stateless and Stateful."},
+                    {text: "A Stateless Widget is immutable- meaning once the widget is built, it will never change. The contents remain fix regardless upon user interaction or app activity. A good example is the top app bar which might hold a static icon and text."},
+                    {text: "On the other hand, you have stateful Widgets which are dynamic in nature. It can update its state and re-render its contents on the fly while the app is running. "},
+                    {text: "This helps make the app interactive where you need it to be. For example, you could have a counter, text failed, and/or a toggle switch. In your app you may want details updating live to display weather information."},
+                    {text: "Flutter efficiently rebuilds only the parts of the UI that need updating."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide7.webp"
@@ -128,7 +146,14 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 8 - Code Example & Explination"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "Let’s look at code example below."},
+                    {text: "On line one we’re importing Google’s Material Design package, which gives us all the core visual styling and widgets needed for the app."},
+                    {text: "On line three, we have void main, which is the entry point for every Dart application."},
+                    {text: "Inside main on line 4, runApp is a built in Flutter function that creates the root of the widget tree."},
+                    {text: "Finally, you’ll see the home property, which acts as the default route or main screen of your app. In this case, it simply holds a Text widget displaying 'Hello Flutter'."},
+                    {text: "Now, obviously, this is a very bare-bones starting point, but don’t be fooled as the lab will take you from this basic snippet to writing properly structured code. Trust me, once you get the hand of it it’s much easier than you think."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide8.webp"
@@ -140,7 +165,11 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 9 - Flutter in a system (1/2)"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "Now we can have a look at how Flutter app connects to the wider world. An app is rarely offline based, it will use the cloud for more eleven up-to-date data."},
+                    {text: "As you can see in this diagram, an Android/IOS app built with flutter communicates with a backend RST API to request information. When a request is made, the backend server retrieves the data from a database and sends a response back through the API."},
+                    {text: "While Flutter handles the visual UI rendering on the device, Dart is working simultaneously in the background to handle the network requests, parse the incoming data, and prepare it for the app."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide9.webp"
@@ -152,7 +181,12 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 10 - Flutter in a system (2/2)"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "So, in a real-world example. Image a company that has built an e-commerce app using Flutter to allow customers to browse an array of items available to buy."},
+                    {text: "When the user open the app, they are on the Home Screen, the app initially displays a spinner in the center or a skeleton placeholder. Behind the scene, Dart is communicating to the backend server to reeve the current catalog of items."},
+                    {text: "Once Dart had successfully populated its variables with the latest information, Flutter is designed to automatically detect the changes and update upon the changed data. This means that the stateful widgets will now dynamically update, transitioning from the skeleton placeholder with the recent catalog."},
+                    {text: "This happens through out the app, all with the help of flutter and dart making the experience as seamless as possible."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide10.webp"
