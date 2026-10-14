@@ -124,11 +124,35 @@ void main() {
                 body={[
                     { text: "1. Research Flutter's TextStyle class in the documentation." },
                     { text: "2. Add the style parameter to your Text widget: Text('Hello, World!', style: TextStyle(...))" },
-                    { text: "3. Make the text larger (e.g., fontSize: 32) and bold (fontWeight: FontWeight.bold)." },
+                    { text: "3. Make the text larger (fontSize: 32) and bold (fontWeight: FontWeight.bold)." },
                 ]}
             />
 
             <CompletedCard onClick={onClickNext}/>
+
+            <LearningResources resources={[
+                {
+                    name: "Hot Reload",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/tools/hot-reload"
+                },
+                {
+                    name: "Text Widget",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets/text"
+                },
+                {
+                    name: "Text Widget",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets/text"
+                },
+                {
+                    name: "UI design & styling",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/accessibility/ui-design-and-styling"
+                }
+            ]}
+            />
         </article>
     );
 }

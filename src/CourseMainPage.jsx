@@ -81,45 +81,70 @@ export default function CourseMainPage(
 
             <LearningResources resources={[
                 {
-                    name: "Arrow function expressions",
-                    author: "Mozilla",
-                    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+                    name: "Install Flutter using VS Code",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/install/with-vs-code"
                 },
                 {
-                    name: "map() filter() and reduce() in JavaScript",
-                    author: "GeekForGeeks",
-                    link: "https://www.geeksforgeeks.org/how-to-use-map-filter-and-reduce-in-javascript/"
+                    name: "Flutter",
+                    author: "Visual Studio Marketplace",
+                    link: "https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter"
                 },
                 {
-                    name: "JavaScript Objects",
-                    author: "W3Schools",
-                    link: "https://www.w3schools.com/js/js_objects.asp"
+                    name: "Flutter SDK",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/install/manual"
                 },
                 {
-                    name: "Working with objects",
-                    author: "Mozilla",
-                    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects"
+                    name: "Hot Reload",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/tools/hot-reload"
                 },
                 {
-                    name: "Using classes",
-                    author: "Mozilla",
-                    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes"
+                    name: "Text Widget",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets/text"
                 },
                 {
-                    name: "JavaScript Arrays",
-                    author: "W3Schools",
-                    link: "https://www.w3schools.com/js/js_arrays.asp"
+                    name: "UI design & styling",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/accessibility/ui-design-and-styling"
                 },
                 {
-                    name: "JavaScript Control Flow Statements",
-                    author: "GeekForGeeks",
-                    link: "https://www.geeksforgeeks.org/javascript/javascript-control-flow-statements/"
+                    name: "Introduction to declarative UI",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/flutter-for/declarative"
                 },
                 {
-                    name: "JavaScript Array find()",
-                    author: "W3Schools",
-                    link: "https://www.w3schools.com/jsref/jsref_find.asp"
+                    name: "Widget catalog",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets"
                 },
+                {
+                    name: "What is a Widget in Flutter",
+                    author: "Stack Overflow",
+                    link: "https://stackoverflow.com/questions/50958238/what-is-a-widget-in-flutter"
+                },
+                {
+                    name: "What is a Widget in Flutter",
+                    author: "Stack Overflow",
+                    link: "https://stackoverflow.com/questions/50958238/what-is-a-widget-in-flutter"
+                },
+                {
+                    name: "Flutter Layout — Complete Guide",
+                    author: "Nayden Gochev",
+                    link: "https://dev.to/gochev/flutter-layout-complete-guide-58fo"
+                },
+                {
+                    name: "Flutter layouts guide: Margins and padding",
+                    author: "Ivy Walobwa",
+                    link: "https://blog.logrocket.com/flutter-layouts-guide-margins-padding/"
+                },
+                {
+                    name: "Adding assets and images",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/assets/assets-and-images"
+                }
             ]}/>
         </article>
     )

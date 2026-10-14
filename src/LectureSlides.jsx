@@ -222,7 +222,11 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 13 - Summary"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "So much has been said in so little time so here are the key points that we have learned today."},
+                    {text: "We have learnt that has a large multiplatform support and it’s always getting regularly updated by Google and we have a declarative UI builder."},
+                    {text: "The easy to learn nature of Flutter helps you create beautiful, unique apps, and Dart supports you throughout helping you writing the code, making sure that you Flutter application runs fast and smoothly. it can be deployed wherever, on whatever, you need it."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide13.webp"
@@ -234,7 +238,13 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 14 - Now it's your turn!"
-                body={[{text: "Well you have already visited the page, once you have done reading over the slides, scroll back up to the top of the page and click on the '<Back' button to return back to the main page to start doing the lab."}]}
+                body={[
+                    {text: "Now let’s take what you have learnt today and put it into practice."},
+                    {text: "The lab guides you through everything, but at the end of each section there are some challenges, we won't give the answer to them, you need to do a bit of research and testing, the best way of learning!"},
+                    {text: "At the end of the lab, you should be able to create reusable widgets and build up a card interface to display some information."},
+                    {text: "We aren’t adding any logic as we are just focusing on Flutter itself, but that shouldn’t stop you from playing about and add some logic into it."},
+                    {text: "Well you have already visited the page, once you have done reading over the slides, scroll back up to the top of the page and click on the '<Back' button to return back to the main page to start doing the lab."}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide14.webp"

@@ -252,6 +252,30 @@ class _MyCard extends StatelessWidget {
             />
 
             <CompletedCard onClick={onClickNext}/>
+
+            <LearningResources resources={[
+                {
+                    name: "Introduction to declarative UI",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/flutter-for/declarative"
+                },
+                {
+                    name: "Widget catalog",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets"
+                },
+                {
+                    name: "What is a Widget in Flutter",
+                    author: "Stack Overflow",
+                    link: "https://stackoverflow.com/questions/50958238/what-is-a-widget-in-flutter"
+                },
+                {
+                    name: "What is a Widget in Flutter",
+                    author: "Stack Overflow",
+                    link: "https://stackoverflow.com/questions/50958238/what-is-a-widget-in-flutter"
+                }
+            ]}
+            />
         </article>
     );
 }

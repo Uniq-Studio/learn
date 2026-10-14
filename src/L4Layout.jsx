@@ -350,6 +350,24 @@ class _MetaDataRow extends StatelessWidget {
             />
 
             <CompletedCard onClick={onClickNext}/>
+
+            <LearningResources resources={[
+                {
+                    name: "Flutter Layout — Complete Guide",
+                    author: "Nayden Gochev",
+                    link: "https://dev.to/gochev/flutter-layout-complete-guide-58fo"
+                },
+                {
+                    name: "Flutter layouts guide: Margins and padding",
+                    author: "Ivy Walobwa",
+                    link: "https://blog.logrocket.com/flutter-layouts-guide-margins-padding/"
+                },
+                {
+                    name: "Adding assets and images",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/assets/assets-and-images"
+                }
+            ]}/>
         </article>
     )
 }

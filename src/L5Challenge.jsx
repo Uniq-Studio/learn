@@ -63,6 +63,49 @@ export default function L5Challenge({ onClickBack }) {
             />
 
             <CompletedCard />
+
+            <LearningResources resources={[
+                {
+                    name: "Text Widget",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets/text"
+                },
+                {
+                    name: "Text Widget",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets/text"
+                },
+                {
+                    name: "UI design & styling",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/accessibility/ui-design-and-styling"
+                },
+                {
+                    name: "Widget catalog",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/widgets"
+                },
+                {
+                    name: "What is a Widget in Flutter",
+                    author: "Stack Overflow",
+                    link: "https://stackoverflow.com/questions/50958238/what-is-a-widget-in-flutter"
+                },
+                {
+                    name: "Flutter Layout — Complete Guide",
+                    author: "Nayden Gochev",
+                    link: "https://dev.to/gochev/flutter-layout-complete-guide-58fo"
+                },
+                {
+                    name: "Flutter layouts guide: Margins and padding",
+                    author: "Ivy Walobwa",
+                    link: "https://blog.logrocket.com/flutter-layouts-guide-margins-padding/"
+                },
+                {
+                    name: "Adding assets and images",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/ui/assets/assets-and-images"
+                }
+            ]}/>
         </article>
     );
 }

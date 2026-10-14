@@ -124,6 +124,25 @@ export default function L1Install({ onClickBack, onClickNext }) {
             />
 
             <CompletedCard onClick={onClickNext}/>
+
+            <LearningResources resources={[
+                {
+                    name: "Install Flutter using VS Code",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/install/with-vs-code"
+                },
+                {
+                    name: "Flutter",
+                    author: "Visual Studio Marketplace",
+                    link: "https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter"
+                },
+                {
+                    name: "Flutter SDK",
+                    author: "Flutter Docs",
+                    link: "https://docs.flutter.dev/install/manual"
+                }
+            ]}
+                />
         </article>
     );
 }
