@@ -198,7 +198,13 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 11 - Advantages to Flutter"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "There are many advantages for using Flutter."},
+                    {text: "Having a single codebase makes it easier to make sure all your platforms are in sync with feature release helping you focus on the one project and hitting millions of devices which will also cut down on development time."},
+                    {text: "Hot reload is designed to view changes on the fly as well, helping you keep up with development speed and making development time shorter as well."},
+                    {text: "With Flutters rich library of widgets, you caisson build beautifully styled user interfaces and Flutter will compile directly to machine code, so performance is top notch no matter the platform you’re using the app on."},
+                    {text: "Thanks to the global community, new packages and widgets are constantly being produced for developer like you to use, so there will be something you need, ready to go!"}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide11.webp"
@@ -210,7 +216,13 @@ export default function LectureSlides(
 
             <SubtitleTextList
                 title="Slide 12 - Disadvantages to Flutter"
-                body={[{text: "SCRIPT NOTES TO BE ADDED HERE"}]}
+                body={[
+                    {text: "Like always, there are some many disadvantages and trade-offs like with most Frameworks."},
+                    {text: "Because Flutter bundles its own engine and runtime that we saw earlier on. The app size will naturally be a lot larger than a purely native application. When Google or Apple bring out new OS features, they will not be accessible through Flutter day one as you will need to wait for Google to create native support or rely on the community to create one before you can take advantage of it. For example, Apple’s Scribble wasn’t accessible for iPad Flutter apps."},
+                    {text: "While Flutter supports Web Deployment, it shouldn’t be used for traditional web pages as the app needs to render everything which has a long load time, so SEOs will see the page take too long to load and can’t understand it’s contents. It. Should strictly only be used for music players or any in browser software."},
+                    {text: "Even though Dart is an approachable language, build in with Flutter may feel like a challenge for those who haven’t fully built with component-based architecture like React."},
+                    {text: "Finally, Flutter isn’t the only Multiplatform option anymore. JetBrains and Google now actively push Kotlin Multiplatform with Compose. This allows Android developers to easily reuse their code from existing Kotlin & Compose apps across IOS desktop, web and servers! Many companies have started using it, ever ordered on the McDonalds' app? You used a Kotlin Multiplatform App!"}
+                ]}
                 content={
                     <ImageCard
                         src="img/slides/slide12.webp"
